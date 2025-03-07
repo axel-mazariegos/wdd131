@@ -1,0 +1,76 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    /* Header, Nav, Main+Aside, Footer */
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation Bar - Using Flexbox */
+nav {
+    background: black;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    padding: 10px;
+}
+
+.navigation li {
+    margin: 0 15px;
+}
+
+.navigation li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Main Layout - Using CSS Grid */
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* Main content takes more space than Aside */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Main Content */
+main {
+    background: lightgray;
+    padding: 20px;
+}
+
+/* Sidebar */
+aside {
+    background: white;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
