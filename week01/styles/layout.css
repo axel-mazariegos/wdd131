@@ -25,14 +25,13 @@ header {
 /* Navigation Bar - Using Flexbox */
 nav {
     background: black;
-    display: flex;
-    justify-content: center;
+    padding: 10px;
 }
 
 .navigation {
     display: flex;
+    justify-content: center;
     list-style: none;
-    padding: 10px;
 }
 
 .navigation li {
