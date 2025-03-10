@@ -1,41 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDDD 131</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-        }
+    <title>WDD 131 – Dynamic Web Fundamentals - Axel Mazariegos</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Axel Mazariegos - Home Page">
+    <meta name="author" content="Axel Mazariegos">
 
-        .container {
-            text-align: center;
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        p {
-            color: #666;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/base.css">
+    <!-- Reference to the JavaScript file -->
+    <script src="scripts/getdates.js" defer></script>
+    <!-- defer → Ensures the script is loaded only after the HTML content is fully parsed. -->
 </head>
 
 <body>
-    <div class="container">
-        <h1>WDD 131</h1>
-        <p>Dynamic Web Fundamentals</p>
-    </div>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Axel Mazariegos</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/axelmazariegos/">LinkedIn</a></li>
+            <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng&id=p35-p36#p35">Scripture</a></li>
+            <li><a href="">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="bio-container">
+                    <p class="bio">
+                        My name is Axel Mazariegos. I was born in Guatemala and currently live here with my family. I am a university student
+                        with experience in family business management. I'm passionate about taking on both academic and entrepreneurial
+                        responsibilities, developing leadership skills, planning abilities, and problem-solving techniques. 
+                    </p>
+                    <img src="images/profile.webp" alt="Photo of Axel Mazariegos" class="profile-photo">
+                </div>
+
+                <h3 class="location">Guatemala City, Guatemala</h3>
+            
+                <div class="country-info">
+                    <div class="flag-container">
+                        <img src="images/guatemala-flag.webp" alt="Flag of Guatemala" class="flag">
+                        <p class="flag-caption">Official Flag of Guatemala</p>
+                    </div>
+                    <div class="country-facts">
+                        <p>Guatemala is located in Central America, bordering Mexico, Belize, Honduras, and El Salvador.
+                        It is known for its rich Mayan heritage and stunning natural landscapes including volcanoes and
+                        Lake Atitlán. Guatemala is famous for its coffee, colorful textiles, and ancient ruins like Tikal
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <div class="resources-container">
+                <ul class="resources-list">
+                    <li><a href="https://www.w3schools.com/">W3 Schools</a> - Comprehensive web development tutorials and
+                        references</li>
+                    <li><a href="https://css-tricks.com/">CSS Tricks</a> - Helpful articles and guides for CSS techniques</li>
+                    <li><a href="https://www.codecademy.com/resources/cheatsheets/language/javascript">JavaScript
+                            cheatsheets</a> - Quick reference guides for JavaScript</li>
+                    <li><a href="https://squoosh.app/">Compress Images</a> - Tool to optimize images for web use</li>
+                    <li><a href="https://byui-cse.github.io/cse-ww-program/resources/frontend-resources.html#images">Images and
+                            Graphics</a> - Collection of image resources for web development</li>
+                    <li><a href="https://roadmap.sh/frontend">Frontend Roadmap</a> - Visual guide to becoming a frontend
+                        developer</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span>| Axel Mazariegos | Guatemala</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
