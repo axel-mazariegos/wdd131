@@ -2,9 +2,9 @@
 
 /* ========== GLOBAL VARIABLES ========== */
 :root {
-    --primary-color: #2E8B57;
+    --primary-color: #175431;
     /* verde */
-    --secondary-color: #4682B4;
+    --secondary-color: #274d6d;
     /* azul */
     --background-color: #f0fdf4;
     --text-color: #333;
@@ -130,10 +130,6 @@ footer p {
     .weather-section {
         bottom: 30px;
         right: 20px;
-    }
-
-    main {
-        
     }
 
     /* ========== WEATHER ICON AFTER HEADING ========== */
