@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tikal</title>
+    <meta name="description" content="Tikal National Park">
+    <meta name="author" content="Axel Mazariegos">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Tikal National Park</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/tikal-large.webp" media="(min-width: 800px)">
+                <img src="images/tikal-small.webp" alt="Temple of the Great Jaguar" >
+            </picture>
+        </div>
+        
+        <div class="data-section">
+            <!-- Data Section -->
+            <h2>Data</h2>
+            <p><strong>Alternative name:</strong> Yax Mutal</p>
+            <p><strong>Location:</strong> Flores, Peten, Guatemala</p>
+            <p><strong>Region:</strong> Peten, Basin</p>
+            <p><strong>Coordinates:</strong> 17°13′19″N 89°37′25″W</p>
+            <p><strong>Cultures:</strong> Mayan civilization</p>
+        </div>
+        
+        <div class="weather-section">
+            <!-- Weather Section -->
+            <h2>Weather</h2>
+            <img class="w-img" src="images/cloud-sun-fill.svg" alt="Weather Image" style="width: 50px; height: auto;">
+            <p><strong>Temperature:</strong> Value</p>
+            <p><strong>Conditions:</strong> Value</p>
+            <p><strong>Wind:</strong> Value</p>
+            <p><strong>Wind Chill:</strong> Value</p>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy;<span id="currentyear"></span>| Axel Mazariegos | Guatemala</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

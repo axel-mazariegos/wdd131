@@ -1,0 +1,152 @@
+/* temples.css */
+
+/* ========== GLOBAL VARIABLES ========== */
+:root {
+    --primary-color: #2E8B57;
+    /* verde */
+    --secondary-color: #4682B4;
+    /* azul */
+    --background-color: #f0fdf4;
+    --text-color: #333;
+    --card-bg: #ffffff;
+    --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --border-radius: 10px;
+    --font-stack: 'Open Sans', sans-serif;
+}
+
+/* ========== BASE STYLES ========== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-stack);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    border-bottom: 4px solid var(--secondary-color);
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin: 1rem 0;
+}
+
+/* ========== DATA & WEATHER SECTIONS ========== */
+.data-section,
+.weather-section {
+    background-color: var(--card-bg);
+    border-left: 5px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+
+h2 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media screen and (min-width: 800px) {
+
+    main {
+            position: relative;
+            display: block;
+        }
+    
+    .hero {
+        position: relative;
+        min-height: 400px;  
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        /*display: block;*/
+        border-radius: var(--border-radius);
+        object-fit: cover;
+    }
+
+    .data-section,
+    .weather-section {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding: 1rem;
+        border-radius: var(--border-radius);
+        box-shadow: var(--box-shadow);
+        max-width: 250px;
+        z-index: 2;
+    }
+
+    .data-section {
+        top: 30px;
+        left: 20px;
+    }
+
+    .weather-section {
+        bottom: 30px;
+        right: 20px;
+    }
+
+    main {
+        
+    }
+
+    /* ========== WEATHER ICON AFTER HEADING ========== */
+    .weather-section h2::after {
+        content: "🌤️";
+        display: inline-block;
+        margin-left: 10px;
+        vertical-align: middle;
+        width: 24px;
+        height: auto;
+    }
+
+    .w-img {
+        display: none;
+    } 
+}
