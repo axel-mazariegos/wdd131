@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="Product Review Form">
+    <meta name="author" content="Axel Mazariegos">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js"></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Product Review Form</h1>
+        <form id="reviewForm" method="get" action="review.html">
+            <!-- Product Selection -->
+            <div class="form-group">
+                <label for="product">Product Name</label>
+                <select id="product" name="product" required>
+                    <option value="">Choose a Product...</option>
+                    <!-- Dynamic options will be inserted here -->
+                </select>
+            </div>
+
+            <!-- Rating -->
+            <div class="form-group">
+                <label>Overall Rating</label>
+                <div class="rating-group">
+                    <div class="star-rating">
+                        <input type="radio" name="rating" id="star-a" value="5" required>
+                        <label for="star-a"></label>
+                        <input type="radio" name="rating" id="star-b" value="4" required>
+                        <label for="star-b"></label>
+                        <input type="radio" name="rating" id="star-c" value="3" required>
+                        <label for="star-c"></label>
+                        <input type="radio" name="rating" id="star-d" value="2" required>
+                        <label for="star-d"></label>
+                        <input type="radio" name="rating" id="star-e" value="1" required>
+                        <label for="star-e"></label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Date of Installation -->
+            <div class="form-group">
+                <label for="installDate">Date of Installation</label>
+                <input type="date" id="installDate" name="installDate" required>
+            </div>
+
+            <!-- Features -->
+            <div class="form-group">
+                <label>Which features did you find most useful?</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" id="feature1" name="durability" value="yes">Durability</label>
+                    <label><input type="checkbox" id="feature2" name="ease-of-use" value="yes">Easy to Use</label>
+                    <label><input type="checkbox" id="feature3" name="performance" value="yes">Performance</label>
+                    <label><input type="checkbox" id="feature4" name="design" value="yes">Design</label>
+                </div>
+            </div>
+
+            <!-- Review -->
+            <div class="form-group">
+                <label for="review">Written Review</label>
+                <textarea id="review" name="review" rows="4"></textarea>
+            </div>
+
+            <!-- User Info -->
+            <div class="form-group">
+                <label for="username">Your Name</label>
+                <input type="text" id="username" name="username">
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Post Review">
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span>| Axel Mazariegos | Guatemala</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+
+</html>
