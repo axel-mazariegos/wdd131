@@ -1,0 +1,132 @@
+/* Large Screen Styles */
+
+/* Navigation */
+nav ul {
+    flex-direction: row;
+    gap: 20px;
+}
+
+nav ul li {
+    width: auto;
+}
+
+nav ul li a {
+    width: auto;
+    text-align: left;
+}
+
+/* Main Content */
+main {
+    padding: 0 20px;
+}
+
+/* Gallery Styles */
+.gallery {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery figure {
+    border-radius: 10px;
+}
+
+.gallery figcaption {
+    padding: 15px;
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    padding: 0 20px;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+
+    /* Header */
+    header {
+        padding: 1rem 2rem;
+    }
+
+    /* Navigation */
+    nav {
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    #nav-menu {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        position: static;
+        width: auto;
+        background-color: transparent;
+    }
+
+    nav ul li {
+        width: auto;
+    }
+
+    nav ul li a {
+        padding: 0.5rem 1rem;
+    }
+
+    /* Main Content */
+    main {
+        padding: 2rem;
+    }
+
+    /* Gallery Styles */
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+
+    .gallery figure {
+        border-radius: 10px;
+        transition: transform 0.2s;
+    }
+
+    .gallery figure:hover {
+        transform: scale(1.02);
+    }
+
+    .gallery figcaption {
+        padding: 1.2rem;
+        font-size: 1rem;
+    }
+
+    .gallery figcaption h3 {
+        font-size: 1.2rem;
+    }
+
+    .gallery figcaption p {
+        font-size: 1rem;
+    }
+
+    /* Filter Options */
+    .filter-options {
+        justify-content: flex-start;
+    }
+
+    .filter-options select,
+    .filter-options button {
+        padding: 0.75rem 1.5rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 2rem;
+    }
+}
