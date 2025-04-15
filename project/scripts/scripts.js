@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function showMessage(text, type) {
         messageBox.textContent = text;
-        messageBox.className = `form-response ${type}`;
+        messageBox.className = `form-response ${type} show`;
     }
 });
 

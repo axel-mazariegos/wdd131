@@ -211,14 +211,23 @@ section.gray {
 .form-response {
     margin-top: 1rem;
     font-weight: bold;
+    padding: 1rem;
+    border-radius: 6px;
+    max-width: 600px;
+    margin-inline: auto;
+    text-align: center;
 }
 
 .form-response.success {
-    color: #00C853;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #81c784;
 }
 
 .form-response.error {
-    color: #D50000;
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ef9a9a;
 }
 
 /* Footer */
