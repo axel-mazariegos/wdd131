@@ -1,0 +1,35 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFEFF;
+    color: #010101;
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #010101;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+ul {
+    padding-left: 1.2rem;
+}
+
+img {
+    max-width: 100%;
+    border: 2px solid #808F87;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+section {
+    margin-bottom: 2.5rem;
+}
