@@ -82,6 +82,28 @@ header {
 }
 
 /* Sections */
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.welcome-message {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #222;
+    background-color: #f5f5f5;
+    border: 1.5px solid #222;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: -1rem;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    display: inline-block;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    margin-left: auto;
+    margin-right: auto;
+}
+
 section {
     padding: 2rem 1rem;
     max-width: 1000px;
@@ -286,3 +308,4 @@ footer {
         /* or adjust based on how it looks */
     }
 }
+

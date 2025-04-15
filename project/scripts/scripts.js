@@ -1,4 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const greetingTarget = document.getElementById("welcome-user");
+    const storedName = localStorage.getItem("bcardUser");
+    if (greetingTarget && storedName) {
+        greetingTarget.textContent = `Welcome back, ${storedName}!`;
+        greetingTarget.classList.add("welcome-message");
+    }
+
     const form = document.getElementById("contactForm");
     const messageBox = document.getElementById("form-message");
 
@@ -16,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             showMessage(`Thanks, ${name}! We'll contact you soon.`, "success");
+            localStorage.setItem("bcardUser", name);
             form.reset();
         });
     }
