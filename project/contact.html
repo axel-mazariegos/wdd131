@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B-Card | Contact</title>
+    <meta name="description" content="B-Card - Your next-generation business card powered by NFC technology">
+    <meta name="author" content="Axel Mazariegos">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="images/logo-b-nav.webp" alt="B-Card Logo" class="logo" />
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>Get in Touch</h1>
+            <p>Want to order your B-Card or have a question? Fill out the form and we'll get back to you shortly!</p>
+        </section>
+
+        <section class="contact-form">
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+            
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            
+                <button type="submit" class="button">Send Message</button>
+            </form>
+            
+            <p id="form-message" class="form-response"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 B-Card. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

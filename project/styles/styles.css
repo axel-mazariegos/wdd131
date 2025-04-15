@@ -1,0 +1,279 @@
+/* styles.css - B-Card Project */
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFEFF;
+    color: #010101;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+    color: #010101;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Header */
+header {
+    background-color: #010101;
+    padding: 1rem;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-links a {
+    color: #FFFEFF;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #010101;
+    background-color: #C0D731;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    padding: 2rem 1rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section.gray {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    margin: 2rem auto;
+    padding: 3rem 1rem;
+}
+.center-text {
+    text-align: center;
+}
+/* Hero Section */
+.hero {
+    text-align: center;
+}
+
+.hero .highlight {
+    color: #C0D731;
+}
+
+.hero-img {
+    margin-top: 2rem;
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+}
+
+/* Features */
+.features {
+    display: grid;
+    gap: 2rem;
+    padding: 2rem 1rem;
+}
+
+.feature {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+.feature-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* or space-between if you want more spread */
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.feature-title .icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Use Cases */
+.use-cases ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+.use-case-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.use-case-grid img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* CTA Button */
+.button {
+    display: inline-block;
+    background-color: #C0D731;
+    color: #010101;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.cta {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.button:hover {
+    background-color: #a6be28;
+}
+
+/* Contact Form */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    align-self: flex-start;
+}
+
+.form-response {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.form-response.success {
+    color: #00C853;
+}
+
+.form-response.error {
+    color: #D50000;
+}
+
+/* Footer */
+footer {
+    background-color: #010101;
+    color: #FFFEFF;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Layout - Tablet & Desktop */
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+
+    .hero {
+        padding: 4rem 2rem;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .intro,
+    .features {
+        padding: 3rem 2rem;
+    }
+
+    .features {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .nav-links {
+        justify-content: flex-end;
+    }
+    
+    .use-case-grid {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .use-case-grid ul {
+        flex: 1;
+    }
+
+    .use-case-grid img {
+        flex-shrink: 0;
+        width: 300px;
+        /* or adjust based on how it looks */
+    }
+}
